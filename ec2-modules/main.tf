@@ -21,14 +21,14 @@ resource "aws_instance" "vm" {
 module "s3_backend" {
   source          = "github.com/devopstia/terraform-course-del/aws-terraform/modules/s3-backend-with-replication"
   bucket_name     = "2555-development-s1-tf-state"
-  dynamodb_table  = "your-dynamodb-table-name"
+  dynamodb_table  = "dynamodb-table-name"
   region          = "us-east-1"
 }
 
 
 
 provider "aws" {
-  region = "your_aws_region"
+  region = "us-east-1"
 }
 
 # Main S3 bucket for storing the Terraform state file
