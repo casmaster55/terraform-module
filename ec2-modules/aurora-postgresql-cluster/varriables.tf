@@ -10,7 +10,7 @@ variable "tags" {
     "owner"          = "Casmaster"
     "teams"          = "DEL"
     "environment"    = "dev"
-    "project"        = "del"
+    "project"        = "auto"
     "create_by"      = "Terraform"
     "cloud_provider" = "aws"
   }
